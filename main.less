@@ -1,0 +1,61 @@
+@corDeFundo: #fe0000;
+@corTexto: #333;
+@corBotao: #4c00ff;
+@corBotaoTexto: #fff;
+@corBorda: #1500ff;
+@padding: 20px;
+
+body {
+    background-color: @corDeFundo;
+    color: @corTexto;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    
+    position: absolute;
+    top: 0;
+    text-align: left;
+    margin-bottom: @padding;
+}
+
+form {
+    background-color: lighten(@corDeFundo, 20%);
+    padding: @padding;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid @corBorda;
+    border-radius: 4px;
+}
+
+button {
+    background-color: @corBotao;
+    color: @corBotaoTexto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: darken(@corBotao, 10%);
+}
